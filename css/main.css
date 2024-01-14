@@ -1,18 +1,66 @@
 @import url(./font.css);
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
-    --primary-black:#282828;
-    --secondary-grey:#151515;
-    --prostoOne:"ProstoOne";
-    --montserrat:"Montserrat";
+:root {
+    --primary-black: #282828;
+    --secondary-grey: #151515;
+    --prostoOne: "ProstoOne";
+    --montserrat: "Montserrat";
 }
 
-.container{
+.container {
     padding: 0px 245px;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-nav {
+    width: 100%;
+    height: 65px;
+    background: var(--primary-black);
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--montserrat);
+    font-weight: 700;
+    color: white;
+}
+
+.left-section {
+    display: flex;
+    column-gap: 30px;
+}
+
+.header-list {
+    display: flex;
+    list-style-type: none;
+    column-gap: 30px;
+    align-items: center;
+    font-family: var(--montserrat);
+}
+
+.link {
+    color: white;
+}
+
+.right-section {
+    display: flex;
+    column-gap: 25px;
+    align-items: center;
+}
+
+.header-hero {
+    width: 100%;
+    height: 700px;
+    background-image: url(../img/Header.png);
+    overflow: hidden;
 }
